@@ -1,0 +1,7 @@
+import requests
+from bs4 import BeautifulSoup
+
+#req = requests.get('https://news.google.com/rss/articles/CBMipAFBVV95cUxQR1FyZkppbWdmbktCSDJabmNfbWJEeFlXSlFfMDJpTkdvbE1NLWRBRUdhNWdjVmY2Mmt4OGptMXpkVXlFQjkwZ3FOeXBpQW5MRlhXRWlQZ01hMEVOWVhJZXAwZ2xIRUlzeFhTUm0tZXhMcG5vZEZ4SXBSSzhGZVhtdEhGTERTVG5lNEpFSjFmT0JyMDFrRGh2bGxiclVxSV92X1FNONIBqgFBVV95cUxNQkk5MVFrZ2NDdmxYbHNxd0hpVGVvTzFXTF9pcHhIc1Fva0VfSVNwOGlXWDlxLUhCd2M2aWNDLXhFMnR6OExET25IeXpHV1BhOUpRM1NvcS05QTFmbWxJT2JLNjh0c3RxLVUzb2JTbVJGLWd6bkd5NUFsSzJZRGdVdEUycHFuQjFrVnhYb3VzQWQxZ0FkbmNpVzRFY1BncE1kd21UcUtpUXVhZw?oc=5')
+soup = BeautifulSoup(req.text, 'html.parser')
+body = soup.find('body')
+#print(soup.prettify())
